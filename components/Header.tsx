@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import {
+    SearchIcon,
+    ShoppingBagIcon,
+    UserIcon,
+} from "@heroicons/react/outline";
 
 export default function Header() {
     return (
@@ -21,6 +26,11 @@ export default function Header() {
                 <a className="headerLink">Explore</a>
                 <a className="headerLink">Support</a>
                 <a className="headerLink">Business</a>
+            </div>
+
+            <div className="flex items-center justify-center gap-x-4 md:w-1/5">
+                <SearchIcon className="headerIcon" />
+    
             </div>
         </header>
     )
